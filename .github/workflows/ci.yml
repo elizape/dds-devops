@@ -7,8 +7,10 @@ on:
     branches: [ "main", "master" ]
 
 jobs:
+
   construir-y-publicar:
     runs-on: ubuntu-latest
+    environment: production
     permissions:
       contents: read
       packages: write
